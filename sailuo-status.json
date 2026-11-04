@@ -1,0 +1,117 @@
+{
+  "active": true,
+  "hostname": "sailuo-1",
+  "os": "Microsoft Windows Server 2022 Datacenter",
+  "os_build": "10.0.20348",
+  "os_style": "Native Windows",
+  "hardware": {
+    "disk_free_gb": 81.0,
+    "ram_gb": 16.0,
+    "cpu_threads": 4
+  },
+  "rdp_port": 3389,
+  "rdp_user": "xyadmin",
+  "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
+  "rdp_denyts": true,
+  "started_at": "2026-11-04T01:18:07Z",
+  "expires_at": "2026-11-04T07:00:07Z",
+  "duration_menit": 342,
+  "run_id": "41753040012",
+  "run_attempt": "1",
+  "run_number": "1",
+  "run_url": "https://github.com/Abbas2487248/Sailuo/actions/runs/41753040012",
+  "mode": "bersih+win10",
+  "persist": {
+    "verified": false,
+    "restored": false,
+    "operation": "restore",
+    "updated_utc": "2026-11-04T01:18:08.6864317Z",
+    "error": "No snapshot release 'sailuo-state-latest' exists in Abbas2487248/Sailuo. Save State has not uploaded a snapshot yet.",
+    "operation_id": "",
+    "status": "failure"
+  },
+  "storage": {
+    "boost": "ok",
+    "before_gb": 81.01,
+    "after_gb": 105.38,
+    "gained_gb": 24.37,
+    "removed_targets": 20,
+    "drives": [
+      {
+        "used_gb": 150.07,
+        "size_gb": 255.45,
+        "free_gb": 105.38,
+        "letter": "C"
+      },
+      {
+        "used_gb": 2.99,
+        "size_gb": 150.0,
+        "free_gb": 147.01,
+        "letter": "D"
+      }
+    ],
+    "note": "Cleanup complete. gained_gb is the actual space change, not a promised capacity. Locked targets may remain."
+  },
+  "win10": {
+    "look": "ok",
+    "badge": "ok",
+    "wallpaper": "ok",
+    "search": "ok",
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
+  },
+  "media": {
+    "microphone": "rdp_capture_enabled",
+    "audio_output": "rdp_playback_enabled",
+    "wallpaper": "sailuo_configured_for_user_logon",
+    "verification": "Login ulang, aktifkan mic di Sailuo and izinkan Android. Uji Windows Settings > Sound > Input; kebijwill aktif bukan bukti capture end-to-end."
+  },
+  "extras": {
+    "lightshot": "ok",
+    "wallpaper": "ok",
+    "wallpaper_file": "wallpaper.jpg",
+    "vscode": "skip",
+    "notepadpp": "skip",
+    "admin": false
+  },
+  "tools_hub": {
+    "auto_start": true,
+    "installed": true,
+    "exe": "C:\\Sailuo\\tools\\SailuoDashboard.exe"
+  },
+  "sailuo": {
+    "host": "ok",
+    "denyts": "ok",
+    "multisession": "ok",
+    "avc444": "ok (120FPS DWMFRAMEINTERVAL=8 + TCPNoDelay=1)",
+    "fontsmoothing": "ok (ClearType profil Default)",
+    "audio_out": "ok (policy fDisableAudio=0, WinStations=0)",
+    "audio_mic": "ok (policy fDisableAudioCapture=0, WinStations=0) - mic HP redirect aktif, Allow di HP",
+    "wallpaper_rdp": "ok (policy fNoRemoteDesktopWallpaper=0) - wallpaper RDP tampil, cek client Experience->Wallpaper ON",
+    "firewall": "tcp3389=True udp3389=True udp4433=True",
+    "services": "ok",
+    "rdp_ready": "127.0.0.1 (handshake OK)",
+    "rdp_probe": "awal=True multi=True audio=True grafis=True clear=True fw=True svc=True",
+    "quic_udp4433": "dibuka di VM (no lewat tunnel TCP)",
+    "access": "(menyusul)",
+    "note": "Host ready for the Sailuo Remote client in RDP connection mode (Host+Port tunnel). The WinStations\\RDP-Tcp key is intentionally NOT written so listener 3389 does not die on the GitHub runner."
+  },
+  "access": {
+    "tunnel": {
+      "outside": "tailscale",
+      "port": 3389,
+      "status": "ok",
+      "address": "100.72.234.111:3389",
+      "selftest": "ok",
+      "host": "100.72.234.111"
+    },
+    "mode": "tailscale",
+    "tailscale": {
+      "ip": "100.72.234.111",
+      "magicdns": "sailuo-1.tail1863f7.ts.net.",
+      "note": "The phone/PC must sign in to Tailscale on the same tailnet. TCP 3389 must be allowed in the ACL.",
+      "status": "ok",
+      "hostname": "sailuo-1"
+    }
+  }
+}
